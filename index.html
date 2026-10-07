@@ -97,7 +97,7 @@ footer{text-align:center;color:var(--mu);font-size:.85rem;padding:0 16px 40px}fo
 <div class="grid" id="g"></div>
 <div class="soon">🌱 <b>Pronto:</b> Rueda Noria Sustentable y Montaña Rusa a Pedales (en fabricación)</div>
 </main>
-<section class="cta"><div class="ci"><img class="cm" data-a="m2" alt="Mascota ARVI"><div><h2>¿Listo para tu evento?</h2><p>Cuéntanos fecha, lugar y cantidad de niños y te cotizamos hoy.</p><a class="btn" href="https://api.whatsapp.com/send/?phone=56988082320?text=Hola%20ARVI!%20Quiero%20cotizar" target="_blank" rel="noopener">💬 Cotiza hoy por WhatsApp</a></div></div></section>
+<section class="cta"><div class="ci"><img class="cm" data-a="m2" alt="Mascota ARVI"><div><h2>¿Listo para tu evento?</h2><p>Cuéntanos fecha, lugar y cantidad de niños y te cotizamos hoy.</p><a class="btn" href="https://api.whatsapp.com/send/?phone=56988082320&text=Hola%20ARVI!%20Quiero%20cotizar" target="_blank" rel="noopener">💬 Cotiza hoy por WhatsApp</a></div></div></section>
 <footer>Normados por IAAPA · Cumplimos instructivos ACHS y normativas chilenas · Tableros certificados SEC<br><br>
 Municipios, colegios, empresas, festivales, ferias, Día del Niño y fiestas de fin de año.<br>
 <a href="mailto:info@arvi.cl">info@arvi.cl</a> · +56 9 6203 1726 · +56 22 527 1281 · @arvi.cl · www.arvi.cl</footer>
@@ -161,7 +161,7 @@ function tog(n){const add=!Q.has(n);add?Q.add(n):Q.delete(n);$("n").textContent=
 $("fab").onclick=()=>{const l=[...Q].map(n=>D.find(x=>x[0]==n));
 const txt="Hola ARVI! Quiero cotizar: "+(l.map(d=>d[1]).join(", ")||"(aún sin elegir)");
 $("md").innerHTML=`<div class="mh c-mec" style="font-size:2rem"><button class="x" onclick="shut()" aria-label="Cerrar">✕</button><img class="mm" src="${A.m1}" alt=""><br>🧾 Mi cotización</div><ul class="q" style="list-style:none;margin:0">${l.map(d=>`<li>${d[3]} ${d[1]}<button onclick="rm(${d[0]})" aria-label="Quitar">✕</button></li>`).join("")||"<li>Aún no agregas juegos. Abre uno y toca “Agregar”.</li>"}</ul>
-<div class="acts"><a class="btn" href="https://api.whatsapp.com/send/?phone=56988082320?text=${encodeURIComponent(txt)}" target="_blank" rel="noopener">Enviar por WhatsApp</a><a class="btn alt" href="mailto:info@arvi.cl?subject=Cotización&body=${encodeURIComponent(txt)}">Enviar por correo</a></div>`;
+<div class="acts"><a class="btn" href="https://api.whatsapp.com/send/?phone=56988082320&text=${encodeURIComponent(txt)}" target="_blank" rel="noopener">Enviar por WhatsApp</a><a class="btn alt" href="mailto:info@arvi.cl?subject=Cotización&body=${encodeURIComponent(txt)}">Enviar por correo</a></div>`;
 $("m").classList.add("on")};
 function rm(n){Q.delete(n);$("n").textContent=Q.size;$("fab").click()}
 
